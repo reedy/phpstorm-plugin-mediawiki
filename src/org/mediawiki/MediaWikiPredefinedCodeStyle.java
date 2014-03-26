@@ -8,8 +8,8 @@ import com.jetbrains.php.lang.PhpLanguage;
 /**
  * @author Reedy
  */
-public class MediaWikiCodeStyle  extends PredefinedCodeStyle {
-    public MediaWikiCodeStyle() {
+public class MediaWikiPredefinedCodeStyle extends PredefinedCodeStyle {
+    public MediaWikiPredefinedCodeStyle() {
         super("MediaWiki", PhpLanguage.INSTANCE);
     }
 

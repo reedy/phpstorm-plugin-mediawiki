@@ -20,7 +20,7 @@
   <depends>com.intellij.modules.platform</depends>
 
   <extensions defaultExtensionNs="com.intellij">
-    <predefinedCodeStyle implementation="org.mediawiki.MediaWikiCodeStyle"/>
+    <predefinedCodeStyle implementation="org.mediawiki.MediaWikiPredefinedCodeStyle"/>
     <!-- Add your extensions here -->
   </extensions>
 
