@@ -4,5 +4,8 @@
 *.jar
 *.war
 *.ear
+
 /phpstorm-plugin-mediawiki.zip
 /out
+.idea/workspace.xml
+
