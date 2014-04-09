@@ -1,4 +1,4 @@
-phpstorm-plugin-mediawiki
+MediaWiki support for PhpStorm
 =========================
 
 [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) IntelliJ plugin for [JetBrains PhpStorm](https://www.jetbrains.com/phpstorm/).
