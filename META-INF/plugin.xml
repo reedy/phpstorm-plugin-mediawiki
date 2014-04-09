@@ -4,7 +4,12 @@
   <version>0.0.1</version>
   <vendor email="reedy@wikimedia.org" url="https://www.mediawiki.org">Wikimedia Foundation</vendor>
 
-  <description>MediaWiki Support</description>
+  <description>MediaWiki Support for PhpStorm
+
+Source is available on GitHub at https://github.com/reedy/phpstorm-plugin-mediawiki
+
+Pull requests and issues welcome.
+  </description>
 
   <change-notes>Version 0.0.1: Initial version</change-notes>
 
