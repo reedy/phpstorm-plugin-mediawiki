@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>org.mediawiki</id>
   <name>MediaWiki Support</name>
-  <version>0.0.1</version>
+  <version>0.1</version>
   <vendor email="reedy@wikimedia.org" url="https://www.mediawiki.org">Wikimedia Foundation</vendor>
 
   <description>MediaWiki Support for PhpStorm
@@ -11,7 +11,7 @@ Source is available on GitHub at https://github.com/reedy/phpstorm-plugin-mediaw
 Pull requests and issues welcome.
   </description>
 
-  <change-notes>Version 0.0.1: Initial version</change-notes>
+  <change-notes>Version 0.1: Initial version</change-notes>
 
   <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
   <idea-version since-build="131"/>

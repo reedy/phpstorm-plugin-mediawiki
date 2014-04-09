@@ -36,6 +36,9 @@ public class MediaWikiCssPredefinedCodeStyle extends PredefinedCodeStyle {
         indentOptions.SMART_TABS = true;
         indentOptions.TAB_SIZE = 4;
         indentOptions.INDENT_SIZE = 4;
-        indentOptions.CONTINUATION_INDENT_SIZE = 4;
+        indentOptions.CONTINUATION_INDENT_SIZE = 8;
+        indentOptions.LABEL_INDENT_SIZE = 0;
+        indentOptions.LABEL_INDENT_ABSOLUTE = false;
+        indentOptions.USE_RELATIVE_INDENTS = false;
     }
 }
