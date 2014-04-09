@@ -2,16 +2,29 @@
   <id>org.mediawiki</id>
   <name>MediaWiki Support</name>
   <version>0.1</version>
-  <vendor email="reedy@wikimedia.org" url="https://www.mediawiki.org">Wikimedia Foundation</vendor>
+  <vendor email="reedy@wikimedia.org" url="https://github.com/reedy/phpstorm-plugin-mediawiki">Sam Reed (reedy)</vendor>
 
-  <description>MediaWiki Support for PhpStorm
+  <description><![CDATA[
+  <p><a href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a> Support for PhpStorm.</p>
 
-Source is available on GitHub at https://github.com/reedy/phpstorm-plugin-mediawiki
-
-Pull requests and issues welcome.
+  <p>Source is available at <a href="https://github.com/reedy/phpstorm-plugin-mediawiki">GitHub</a>, pull requests and issues welcome.</p>
+  ]]>
   </description>
 
-  <change-notes>Version 0.1: Initial version</change-notes>
+  <change-notes><![CDATA[
+      <p>
+          <strong>Version 0.1</strong>
+          <ul>
+              <li>Initial version</li>
+              <li>Basic settings from <a href="https://github.com/siebrand/MediaWiki-PHPStorm/tree/7.1.3">Siebrand Mazeland</a> and <a href="https://www.mediawiki.org/w/index.php?title=PhpStorm&oldid=938244">Physikerwelt</a></li>
+          </ul>
+      </p>
+      <p>
+          <strong>Legal stuff</strong>
+          <p>License : GNU GPL v2 or later</p>
+          <p>Sources : <a href="https://github.com/reedy/phpstorm-plugin-mediawiki">https://github.com/reedy/phpstorm-plugin-mediawiki</a></p>
+      </p>
+  ]]></change-notes>
 
   <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
   <idea-version since-build="131"/>
