@@ -10,8 +10,8 @@ import com.jetbrains.php.lang.formatter.PhpCodeStyleSettings;
 /**
  * @author Reedy
  */
-public class MediaWikiPredefinedCodeStyle extends PredefinedCodeStyle {
-    public MediaWikiPredefinedCodeStyle() {
+public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
+    public MediaWikiPhpPredefinedCodeStyle() {
         super("MediaWiki", PhpLanguage.INSTANCE);
     }
 

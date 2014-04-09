@@ -25,8 +25,9 @@ Pull requests and issues welcome.
   <depends>com.intellij.modules.platform</depends>
 
   <extensions defaultExtensionNs="com.intellij">
-    <predefinedCodeStyle implementation="org.mediawiki.MediaWikiPredefinedCodeStyle"/>
-    <!-- Add your extensions here -->
+    <predefinedCodeStyle implementation="org.mediawiki.MediaWikiPhpPredefinedCodeStyle"/>
+    <predefinedCodeStyle implementation="org.mediawiki.MediaWikiCssPredefinedCodeStyle"/>
+    <predefinedCodeStyle implementation="org.mediawiki.MediaWikiHTMLPredefinedCodeStyle"/>
   </extensions>
 
   <application-components>
