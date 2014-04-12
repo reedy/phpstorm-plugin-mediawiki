@@ -26,7 +26,8 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         commonSettings.CLASS_BRACE_STYLE = 1;
         commonSettings.METHOD_BRACE_STYLE = 1;
 
-        commonSettings.CATCH_ON_NEW_LINE = true;
+        commonSettings.CATCH_ON_NEW_LINE = false;
+        commonSettings.FINALLY_ON_NEW_LINE = false;
 
         commonSettings.ALIGN_MULTILINE_PARAMETERS = false;
 
@@ -57,7 +58,7 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         indentOptions.SMART_TABS = true;
         indentOptions.TAB_SIZE = 4;
         indentOptions.INDENT_SIZE = 4;
-        indentOptions.CONTINUATION_INDENT_SIZE = 8;
+        indentOptions.CONTINUATION_INDENT_SIZE = 4;
         indentOptions.LABEL_INDENT_SIZE = 0;
         indentOptions.LABEL_INDENT_ABSOLUTE = false;
         indentOptions.USE_RELATIVE_INDENTS = false;

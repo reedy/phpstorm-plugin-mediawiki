@@ -15,7 +15,8 @@
       <p>
           <strong>Version 0.2</strong>
           <ul>
-              <li>Search on MediaWiki.org on context menu with selected text</li>
+              <li>Search MediaWiki.org via right click menus with selected text</li>
+              <li>Minor improvements in PHP Code Style</li>
           </ul>
 
           <strong>Version 0.1</strong>
