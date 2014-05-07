@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>org.mediawiki</id>
   <name>MediaWiki Support</name>
-  <version>0.2</version>
+  <version>0.3</version>
   <vendor email="reedy@wikimedia.org" url="https://github.com/reedy/phpstorm-plugin-mediawiki">Sam Reed (reedy)</vendor>
 
   <description><![CDATA[
@@ -13,6 +13,11 @@
 
   <change-notes><![CDATA[
       <p>
+          <strong>Version 0.3</strong>
+          <ul>
+              <li>Javascript Code Style</li>
+          </ul>
+
           <strong>Version 0.2</strong>
           <ul>
               <li>Search MediaWiki.org via right click menus with selected text</li>
@@ -36,12 +41,14 @@
   <idea-version since-build="131"/>
 
   <depends>com.jetbrains.php</depends>
+  <depends>com.intellij.modules.lang</depends>
   <depends>com.intellij.modules.ultimate</depends>
 
   <extensions defaultExtensionNs="com.intellij">
     <predefinedCodeStyle implementation="org.mediawiki.MediaWikiPhpPredefinedCodeStyle"/>
     <predefinedCodeStyle implementation="org.mediawiki.MediaWikiCssPredefinedCodeStyle"/>
     <predefinedCodeStyle implementation="org.mediawiki.MediaWikiHTMLPredefinedCodeStyle"/>
+    <predefinedCodeStyle implementation="org.mediawiki.MediaWikiJsPredefinedCodeStyle"/>
   </extensions>
 
   <application-components>
