@@ -7,6 +7,8 @@
   <description><![CDATA[
   <p><a href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a> Development Support for PhpStorm.</p>
 
+  <p>To configure/use the MediaWiki Code Styles, go to Preferences > Editor > Code Style > PHP/CSS/Html/JavaScript, and then select "Set from..." and select "MediaWiki".</p>
+
   <p>Source is available at <a href="https://github.com/reedy/phpstorm-plugin-mediawiki">GitHub</a>, pull requests and issues welcome.</p>
   ]]>
   </description>
