@@ -50,7 +50,7 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         PhpCodeStyleSettings phpSettings = settings.getCustomSettings(PhpCodeStyleSettings.class);
         phpSettings.LOWER_CASE_BOOLEAN_CONST = true;
         phpSettings.LOWER_CASE_NULL_CONST = true;
-        phpSettings.BLANK_LINE_BEFORE_RETURN_STATEMENT = true;
+        phpSettings.BLANK_LINES_BEFORE_RETURN_STATEMENT = 1;
         phpSettings.KEEP_RPAREN_AND_LBRACE_ON_ONE_LINE = true;
 
         CodeStyleSettings.IndentOptions indentOptions = settings.getIndentOptions(PhpFileType.INSTANCE);
