@@ -24,8 +24,8 @@ import com.intellij.psi.css.CssFileType;
 /**
  * @author Reedy
  */
-public class MediaWikiCssPredefinedCodeStyle extends PredefinedCodeStyle {
-    public MediaWikiCssPredefinedCodeStyle() {
+public class MediaWikiCSSPredefinedCodeStyle extends PredefinedCodeStyle {
+    public MediaWikiCSSPredefinedCodeStyle() {
         super("MediaWiki", CSSLanguage.INSTANCE);
     }
 
