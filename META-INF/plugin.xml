@@ -1,11 +1,11 @@
 <idea-plugin version="2">
   <id>org.mediawiki</id>
   <name>MediaWiki Support</name>
-  <version>0.3</version>
+  <version>0.4</version>
   <vendor email="reedy@wikimedia.org" url="https://github.com/reedy/phpstorm-plugin-mediawiki">Sam Reed (reedy)</vendor>
 
   <description><![CDATA[
-  <p><a href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a> Support for PhpStorm.</p>
+  <p><a href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a> Development Support for PhpStorm.</p>
 
   <p>Source is available at <a href="https://github.com/reedy/phpstorm-plugin-mediawiki">GitHub</a>, pull requests and issues welcome.</p>
   ]]>
@@ -13,6 +13,12 @@
 
   <change-notes><![CDATA[
       <p>
+          <strong>Version 0.4</strong>
+          <ul>
+              <li>Rebuild on the 2020.1 platform</li>
+              <li>Fixup deprecated phpSettings.BLANK_LINE_BEFORE_RETURN_STATEMENT</li>
+          </ul>
+
           <strong>Version 0.3</strong>
           <ul>
               <li>Javascript Code Style</li>
@@ -46,7 +52,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <predefinedCodeStyle implementation="org.mediawiki.MediaWikiPhpPredefinedCodeStyle"/>
-    <predefinedCodeStyle implementation="org.mediawiki.MediaWikiCssPredefinedCodeStyle"/>
+    <predefinedCodeStyle implementation="org.mediawiki.MediaWikiCSSPredefinedCodeStyle"/>
     <predefinedCodeStyle implementation="org.mediawiki.MediaWikiHTMLPredefinedCodeStyle"/>
     <predefinedCodeStyle implementation="org.mediawiki.MediaWikiJsPredefinedCodeStyle"/>
   </extensions>
