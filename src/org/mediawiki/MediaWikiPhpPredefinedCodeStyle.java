@@ -30,6 +30,7 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         commonSettings.FINALLY_ON_NEW_LINE = false;
 
         commonSettings.ALIGN_MULTILINE_PARAMETERS = false;
+        commonSettings.ALIGN_MULTILINE_FOR = false;
 
         commonSettings.SPACE_WITHIN_PARENTHESES = true;
         commonSettings.SPACE_WITHIN_METHOD_CALL_PARENTHESES = true;
