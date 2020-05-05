@@ -48,8 +48,10 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         commonSettings.DOWHILE_BRACE_FORCE = 3;
         commonSettings.WHILE_BRACE_FORCE = 3;
         
+        // Chop down if long
+        commonSettings.ARRAY_INITIALIZER_WRAP = 2;
+
         // Wrap if long
-        commonSettings.ARRAY_INITIALIZER_WRAP = 1;
         commonSettings.METHOD_CALL_CHAIN_WRAP = 1;
 
         PhpCodeStyleSettings phpSettings = settings.getCustomSettings(PhpCodeStyleSettings.class);
