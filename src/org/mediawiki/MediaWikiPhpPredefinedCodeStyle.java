@@ -54,6 +54,9 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
 
         // Wrap if long
         commonSettings.METHOD_CALL_CHAIN_WRAP = 1;
+        
+        // Hard wrap at 120 characters
+        commonSettings.RIGHT_MARGIN = 120;
 
         PhpCodeStyleSettings phpSettings = settings.getCustomSettings(PhpCodeStyleSettings.class);
         phpSettings.LOWER_CASE_BOOLEAN_CONST = true;
