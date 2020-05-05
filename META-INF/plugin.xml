@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>org.mediawiki</id>
   <name>MediaWiki Support</name>
-  <version>0.4</version>
+  <version>0.5</version>
   <vendor email="reedy@wikimedia.org" url="https://github.com/reedy/phpstorm-plugin-mediawiki">Sam Reed (reedy)</vendor>
 
   <description><![CDATA[
@@ -10,11 +10,18 @@
   <p>To configure/use the MediaWiki Code Styles, go to Preferences > Editor > Code Style > PHP/CSS/Html/JavaScript, and then select "Set from..." and select "MediaWiki".</p>
 
   <p>Source is available at <a href="https://github.com/reedy/phpstorm-plugin-mediawiki">GitHub</a>, pull requests and issues welcome.</p>
+
+  <p>PHP Code Style follows <a href="https://www.mediawiki.org/wiki/Manual:Coding_conventions/PHP">MediaWiki coding conventions</a> where possible.</p>
   ]]>
   </description>
 
   <change-notes><![CDATA[
       <p>
+          <strong>Version 0.5</strong>
+          <ul>
+              <li>Improve PHP Code Style to match MediaWiki coding conventions</li>
+          </ul>
+
           <strong>Version 0.4</strong>
           <ul>
               <li>Rebuild on the 2020.1 platform</li>
