@@ -50,6 +50,7 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         
         // Wrap if long
         commonSettings.ARRAY_INITIALIZER_WRAP = 1;
+        commonSettings.METHOD_CALL_CHAIN_WRAP = 1;
 
         PhpCodeStyleSettings phpSettings = settings.getCustomSettings(PhpCodeStyleSettings.class);
         phpSettings.LOWER_CASE_BOOLEAN_CONST = true;
