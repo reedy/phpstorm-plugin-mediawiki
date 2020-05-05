@@ -65,6 +65,11 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         phpSettings.KEEP_RPAREN_AND_LBRACE_ON_ONE_LINE = true;
         phpSettings.SPACE_AFTER_COLON_IN_RETURN_TYPE = true;
         phpSettings.SPACE_BEFORE_COLON_IN_RETURN_TYPE = true;
+        
+        phpSettings.PHPDOC_BLANK_LINE_BEFORE_TAGS = true;
+        phpSettings.PHPDOC_KEEP_BLANK_LINES = true;
+        phpSettings.PHPDOC_BLANK_LINES_AROUND_PARAMETERS = true;
+        phpSettings.PHPDOC_WRAP_LONG_LINES = true;
 
         CodeStyleSettings.IndentOptions indentOptions = settings.getIndentOptions(PhpFileType.INSTANCE);
         indentOptions.USE_TAB_CHARACTER = true;
