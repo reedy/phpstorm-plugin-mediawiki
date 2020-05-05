@@ -47,6 +47,9 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         commonSettings.FOR_BRACE_FORCE = 3;
         commonSettings.DOWHILE_BRACE_FORCE = 3;
         commonSettings.WHILE_BRACE_FORCE = 3;
+        
+        // Wrap if long
+        commonSettings.ARRAY_INITIALIZER_WRAP = 1;
 
         PhpCodeStyleSettings phpSettings = settings.getCustomSettings(PhpCodeStyleSettings.class);
         phpSettings.LOWER_CASE_BOOLEAN_CONST = true;
