@@ -55,7 +55,7 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
 
         CodeStyleSettings.IndentOptions indentOptions = settings.getIndentOptions(PhpFileType.INSTANCE);
         indentOptions.USE_TAB_CHARACTER = true;
-        indentOptions.SMART_TABS = true;
+        indentOptions.SMART_TABS = false;
         indentOptions.TAB_SIZE = 4;
         indentOptions.INDENT_SIZE = 4;
         indentOptions.CONTINUATION_INDENT_SIZE = 4;
