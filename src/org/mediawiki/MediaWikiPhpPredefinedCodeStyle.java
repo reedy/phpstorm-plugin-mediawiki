@@ -50,6 +50,7 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         
         // Chop down if long
         commonSettings.ARRAY_INITIALIZER_WRAP = 2;
+        commonSettings.CALL_PARAMETERS_WRAP = 2;
 
         // Wrap if long
         commonSettings.METHOD_CALL_CHAIN_WRAP = 1;
