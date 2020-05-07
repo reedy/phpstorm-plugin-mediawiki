@@ -57,6 +57,9 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         
         // Hard wrap at 120 characters
         commonSettings.RIGHT_MARGIN = 120;
+        
+        // Keep line breaks when reformatting
+        commonSettings.KEEP_LINE_BREAKS = true;
 
         PhpCodeStyleSettings phpSettings = settings.getCustomSettings(PhpCodeStyleSettings.class);
         phpSettings.LOWER_CASE_BOOLEAN_CONST = true;
