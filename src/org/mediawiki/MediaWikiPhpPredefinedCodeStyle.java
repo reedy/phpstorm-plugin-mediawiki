@@ -6,6 +6,7 @@ import com.intellij.psi.codeStyle.PredefinedCodeStyle;
 import com.jetbrains.php.lang.PhpFileType;
 import com.jetbrains.php.lang.PhpLanguage;
 import com.jetbrains.php.lang.formatter.PhpCodeStyleSettings;
+import com.jetbrains.php.refactoring.PhpNameStyle;
 
 /**
  * @author Reedy
@@ -47,19 +48,40 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         commonSettings.FOR_BRACE_FORCE = 3;
         commonSettings.DOWHILE_BRACE_FORCE = 3;
         commonSettings.WHILE_BRACE_FORCE = 3;
-        
-        // Chop down if long
-        commonSettings.ARRAY_INITIALIZER_WRAP = 2;
-        commonSettings.CALL_PARAMETERS_WRAP = 2;
 
-        // Wrap if long
-        commonSettings.METHOD_CALL_CHAIN_WRAP = 1;
+        commonSettings.ARRAY_INITIALIZER_WRAP = 2;
+        commonSettings.ARRAY_INITIALIZER_LBRACE_ON_NEXT_LINE = true;
+        commonSettings.ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE = true;
+
+        commonSettings.CALL_PARAMETERS_WRAP = 5;
+        commonSettings.METHOD_PARAMETERS_WRAP = 5;
+
+        commonSettings.EXTENDS_KEYWORD_WRAP = 1;
+        commonSettings.EXTENDS_LIST_WRAP = 5;
+
+        commonSettings.CALL_PARAMETERS_LPAREN_ON_NEXT_LINE = true;
+        commonSettings.CALL_PARAMETERS_RPAREN_ON_NEXT_LINE = true;
+
+        commonSettings.METHOD_PARAMETERS_LPAREN_ON_NEXT_LINE = true;
+        commonSettings.METHOD_PARAMETERS_RPAREN_ON_NEXT_LINE = true;
+
+        commonSettings.METHOD_CALL_CHAIN_WRAP = 5;
+        commonSettings.BINARY_OPERATION_WRAP = 5;
+        commonSettings.TERNARY_OPERATION_WRAP = 1;
+        commonSettings.TERNARY_OPERATION_SIGNS_ON_NEXT_LINE = true;
+
+        commonSettings.FOR_STATEMENT_WRAP = 1;
+        commonSettings.FOR_STATEMENT_LPAREN_ON_NEXT_LINE = true;
+        commonSettings.FOR_STATEMENT_RPAREN_ON_NEXT_LINE = true;
         
         // Hard wrap at 120 characters
         commonSettings.RIGHT_MARGIN = 120;
+
+        // Doesn't seem to exist?
+        // commonSettings.SOFT_MARGINS = 100;
         
-        // Keep line breaks when reformatting
-        commonSettings.KEEP_LINE_BREAKS = true;
+        // Don't keep line breaks when reformatting
+        commonSettings.KEEP_LINE_BREAKS = false;
 
         PhpCodeStyleSettings phpSettings = settings.getCustomSettings(PhpCodeStyleSettings.class);
         phpSettings.LOWER_CASE_BOOLEAN_CONST = true;
@@ -68,11 +90,15 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         phpSettings.KEEP_RPAREN_AND_LBRACE_ON_ONE_LINE = true;
         phpSettings.SPACE_AFTER_COLON_IN_RETURN_TYPE = true;
         phpSettings.SPACE_BEFORE_COLON_IN_RETURN_TYPE = true;
+        phpSettings.IF_LPAREN_ON_NEXT_LINE = true;
+        phpSettings.IF_RPAREN_ON_NEXT_LINE = true;
+        phpSettings.VARIABLE_NAMING_STYLE = PhpNameStyle.Style.CAMEL_CASE;
         
         phpSettings.PHPDOC_BLANK_LINE_BEFORE_TAGS = true;
         phpSettings.PHPDOC_KEEP_BLANK_LINES = true;
         phpSettings.PHPDOC_BLANK_LINES_AROUND_PARAMETERS = true;
         phpSettings.PHPDOC_WRAP_LONG_LINES = true;
+        phpSettings.SORT_PHPDOC_ELEMENTS = false;
 
         CodeStyleSettings.IndentOptions indentOptions = settings.getIndentOptions(PhpFileType.INSTANCE);
         indentOptions.USE_TAB_CHARACTER = true;
