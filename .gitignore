@@ -1,11 +1,13 @@
 *.class
-
-# Package Files #
 *.jar
 *.war
 *.ear
 
 /phpstorm-plugin-mediawiki.zip
 /out
-.idea/workspace.xml
 
+/.idea
+/.vagrant
+/.gradle
+/build
+.DS_Store

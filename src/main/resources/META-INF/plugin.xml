@@ -55,6 +55,8 @@
   <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
   <idea-version since-build="131"/>
 
+  <depends>com.intellij.css</depends>
+  <depends>JavaScript</depends>
   <depends>com.jetbrains.php</depends>
   <depends>com.intellij.modules.lang</depends>
   <depends>com.intellij.modules.ultimate</depends>
