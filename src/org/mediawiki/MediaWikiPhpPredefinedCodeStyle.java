@@ -90,7 +90,7 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         phpSettings.BLANK_LINES_BEFORE_RETURN_STATEMENT = 1;
         phpSettings.KEEP_RPAREN_AND_LBRACE_ON_ONE_LINE = true;
         phpSettings.SPACE_AFTER_COLON_IN_RETURN_TYPE = true;
-        phpSettings.SPACE_BEFORE_COLON_IN_RETURN_TYPE = true;
+        phpSettings.SPACE_BEFORE_COLON_IN_RETURN_TYPE = false;
         phpSettings.IF_LPAREN_ON_NEXT_LINE = true;
         phpSettings.IF_RPAREN_ON_NEXT_LINE = true;
         phpSettings.VARIABLE_NAMING_STYLE = PhpNameStyle.Style.CAMEL_CASE;
