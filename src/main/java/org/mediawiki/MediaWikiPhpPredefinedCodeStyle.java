@@ -43,7 +43,7 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         commonSettings.SPACE_WITHIN_SWITCH_PARENTHESES = true;
         commonSettings.SPACE_WITHIN_ARRAY_INITIALIZER_BRACES = true;
         commonSettings.SPACE_AFTER_TYPE_CAST = false;
-        commonSettings.SPACES_AROUND_VAR_WITHIN_BRACKETS = false;
+        // commonSettings.SPACES_AROUND_VAR_WITHIN_BRACKETS = false;
 
         commonSettings.IF_BRACE_FORCE = 3;
         commonSettings.FOR_BRACE_FORCE = 3;
@@ -74,13 +74,13 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         commonSettings.FOR_STATEMENT_WRAP = 1;
         commonSettings.FOR_STATEMENT_LPAREN_ON_NEXT_LINE = true;
         commonSettings.FOR_STATEMENT_RPAREN_ON_NEXT_LINE = true;
-        
+
         // Hard wrap at 120 characters
         commonSettings.RIGHT_MARGIN = 120;
 
         // Doesn't seem to exist?
         // commonSettings.SOFT_MARGINS = 100;
-        
+
         // Don't keep line breaks when reformatting
         commonSettings.KEEP_LINE_BREAKS = false;
 
@@ -94,7 +94,7 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         phpSettings.IF_LPAREN_ON_NEXT_LINE = true;
         phpSettings.IF_RPAREN_ON_NEXT_LINE = true;
         phpSettings.VARIABLE_NAMING_STYLE = PhpNameStyle.Style.CAMEL_CASE;
-        
+
         phpSettings.PHPDOC_BLANK_LINE_BEFORE_TAGS = true;
         phpSettings.PHPDOC_KEEP_BLANK_LINES = true;
         phpSettings.PHPDOC_BLANK_LINES_AROUND_PARAMETERS = true;
