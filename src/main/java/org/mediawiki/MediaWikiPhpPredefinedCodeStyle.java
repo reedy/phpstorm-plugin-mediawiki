@@ -21,11 +21,14 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         CommonCodeStyleSettings commonSettings = settings.getCommonSettings(getLanguage());
         commonSettings.KEEP_BLANK_LINES_IN_CODE = 1;
         commonSettings.KEEP_BLANK_LINES_BEFORE_RBRACE = 0;
+
+        // Don't keep line breaks when reformatting
         commonSettings.KEEP_LINE_BREAKS = false;
+
         commonSettings.KEEP_CONTROL_STATEMENT_IN_ONE_LINE = false;
 
-        commonSettings.CLASS_BRACE_STYLE = 1;
-        commonSettings.METHOD_BRACE_STYLE = 1;
+        commonSettings.CLASS_BRACE_STYLE = CommonCodeStyleSettings.END_OF_LINE;
+        commonSettings.METHOD_BRACE_STYLE = CommonCodeStyleSettings.END_OF_LINE;
 
         commonSettings.CATCH_ON_NEW_LINE = false;
         commonSettings.FINALLY_ON_NEW_LINE = false;
@@ -43,12 +46,13 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         commonSettings.SPACE_WITHIN_SWITCH_PARENTHESES = true;
         commonSettings.SPACE_WITHIN_ARRAY_INITIALIZER_BRACES = true;
         commonSettings.SPACE_AFTER_TYPE_CAST = false;
+        // Doesn't seem to exist?
         // commonSettings.SPACES_AROUND_VAR_WITHIN_BRACKETS = false;
 
-        commonSettings.IF_BRACE_FORCE = 3;
-        commonSettings.FOR_BRACE_FORCE = 3;
-        commonSettings.DOWHILE_BRACE_FORCE = 3;
-        commonSettings.WHILE_BRACE_FORCE = 3;
+        commonSettings.IF_BRACE_FORCE = CommonCodeStyleSettings.FORCE_BRACES_ALWAYS;
+        commonSettings.FOR_BRACE_FORCE = CommonCodeStyleSettings.FORCE_BRACES_ALWAYS;
+        commonSettings.DOWHILE_BRACE_FORCE = CommonCodeStyleSettings.FORCE_BRACES_ALWAYS;
+        commonSettings.WHILE_BRACE_FORCE = CommonCodeStyleSettings.FORCE_BRACES_ALWAYS;
 
         commonSettings.ARRAY_INITIALIZER_WRAP = 2;
         commonSettings.ARRAY_INITIALIZER_LBRACE_ON_NEXT_LINE = true;
@@ -80,9 +84,6 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
 
         // Doesn't seem to exist?
         // commonSettings.SOFT_MARGINS = 100;
-
-        // Don't keep line breaks when reformatting
-        commonSettings.KEEP_LINE_BREAKS = false;
 
         PhpCodeStyleSettings phpSettings = settings.getCustomSettings(PhpCodeStyleSettings.class);
         phpSettings.LOWER_CASE_BOOLEAN_CONST = true;

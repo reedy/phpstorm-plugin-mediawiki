@@ -17,6 +17,7 @@
 package org.mediawiki;
 
 import com.intellij.ide.BrowserUtil;
+import com.intellij.openapi.actionSystem.ActionUpdateThread;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
@@ -26,14 +27,14 @@ import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 
 /**
  * @author Reedy
  */
 public class MediaWikiSearchDocsAction extends AnAction {
-    public void update(AnActionEvent event) {
+    public void update(@NotNull AnActionEvent event) {
         boolean enabled = getSelectedText(event) != null;
         event.getPresentation().setEnabled(enabled);
         event.getPresentation().setVisible(enabled);
@@ -49,7 +50,7 @@ public class MediaWikiSearchDocsAction extends AnAction {
         return StringUtil.nullize(selectedText, true);
     }
 
-    public void actionPerformed(AnActionEvent event) {
+    public void actionPerformed(@NotNull AnActionEvent event) {
         String selectedText = getSelectedText(event);
         if (selectedText == null) {
             return;
@@ -59,10 +60,10 @@ public class MediaWikiSearchDocsAction extends AnAction {
 
     @NonNls
     private static String getSearchUrl(@NotNull String textToSearch) {
-        try {
-            return "https://www.mediawiki.org/w/index.php?title=Special%3ASearch&profile=default&fulltext=Search&search=" + URLEncoder.encode(textToSearch, "UTF-8");
-        } catch (UnsupportedEncodingException e) {
-        }
-        return "";
+        return "https://www.mediawiki.org/w/index.php?title=Special%3ASearch&profile=default&fulltext=Search&search=" + URLEncoder.encode(textToSearch, StandardCharsets.UTF_8);
+    }
+
+    public @NotNull ActionUpdateThread getActionUpdateThread() {
+        return ActionUpdateThread.BGT;
     }
 }
