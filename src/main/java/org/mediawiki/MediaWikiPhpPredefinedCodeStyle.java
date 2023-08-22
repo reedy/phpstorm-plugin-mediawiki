@@ -46,8 +46,7 @@ public class MediaWikiPhpPredefinedCodeStyle extends PredefinedCodeStyle {
         commonSettings.SPACE_WITHIN_SWITCH_PARENTHESES = true;
         commonSettings.SPACE_WITHIN_ARRAY_INITIALIZER_BRACES = true;
         commonSettings.SPACE_AFTER_TYPE_CAST = false;
-        // Doesn't seem to exist?
-        // commonSettings.SPACES_AROUND_VAR_WITHIN_BRACKETS = false;
+        commonSettings.SPACE_WITHIN_BRACKETS = false;
 
         commonSettings.IF_BRACE_FORCE = CommonCodeStyleSettings.FORCE_BRACES_ALWAYS;
         commonSettings.FOR_BRACE_FORCE = CommonCodeStyleSettings.FORCE_BRACES_ALWAYS;
