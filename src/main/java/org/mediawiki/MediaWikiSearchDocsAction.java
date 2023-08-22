@@ -64,6 +64,6 @@ public class MediaWikiSearchDocsAction extends AnAction {
     }
 
     public @NotNull ActionUpdateThread getActionUpdateThread() {
-        return ActionUpdateThread.BGT;
+        return ActionUpdateThread.EDT;
     }
 }
