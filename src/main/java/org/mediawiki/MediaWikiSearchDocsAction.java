@@ -63,7 +63,7 @@ public class MediaWikiSearchDocsAction extends AnAction {
         return "https://www.mediawiki.org/w/index.php?title=Special%3ASearch&profile=default&fulltext=Search&search=" + URLEncoder.encode(textToSearch, StandardCharsets.UTF_8);
     }
 
-    public @NotNull ActionUpdateThread getActionUpdateThread() {
+    public @NotNull @Override ActionUpdateThread getActionUpdateThread() {
         return ActionUpdateThread.EDT;
     }
 }
