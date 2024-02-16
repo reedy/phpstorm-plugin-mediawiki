@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "org.mediawiki"
-version = "0.6"
+version = "0.6.1"
 
 repositories {
   mavenCentral()
