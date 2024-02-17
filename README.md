@@ -1,5 +1,5 @@
 MediaWiki support for PhpStorm
-=========================
+==============================
 
 [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) IntelliJ plugin
 for [JetBrains PhpStorm](https://www.jetbrains.com/phpstorm/), mostly providing standardised code styles for PHP,
@@ -16,3 +16,8 @@ The code style support is now somewhere deprecated now that IntelliJ supports [`
 [JetBrains Plugin Repository :: MediaWiki Support](http://plugins.jetbrains.com/plugin/7439)
 
 License : GNU GPL v2 or later
+
+Building a release
+==================
+
+`./gradlew buildPlugin`
