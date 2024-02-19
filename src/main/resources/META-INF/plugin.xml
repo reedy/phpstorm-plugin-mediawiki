@@ -25,7 +25,7 @@
       <p>
           <strong>Version 0.6.2</strong>
           <ul>
-              <li>Allow plugin on 233.* builds of IDEs</li>
+              <li>Remove max IDE build version</li>
           </ul>
           <strong>Version 0.6.1</strong>
           <ul>
