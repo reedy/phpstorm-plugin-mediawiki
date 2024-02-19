@@ -23,6 +23,10 @@
 
     <change-notes><![CDATA[
       <p>
+          <strong>Version 0.x.x</strong>
+          <ul>
+              <li>Remove max build number</li>
+          </ul>
           <strong>Version 0.6.2</strong>
           <ul>
               <li>Allow plugin on newer IDE builds</li>
