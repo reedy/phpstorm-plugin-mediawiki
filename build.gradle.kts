@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "org.mediawiki"
-version = "0.6.2"
+version = "0.6.3"
 
 repositories {
   mavenCentral()
@@ -35,7 +35,7 @@ tasks {
   }
 
   patchPluginXml {
-    sinceBuild.set("222.3345.118")
+    sinceBuild.set("233.14475.35")
     untilBuild.set("")
   }
 

@@ -21,3 +21,5 @@ Building a release
 ==================
 
 `./gradlew buildPlugin`
+
+The output is then in `build/distributions`.
